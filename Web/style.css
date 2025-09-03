@@ -1,3 +1,126 @@
 body {
-    background-color: blanchedalmond;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+/* Header */
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navbar container */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;                /* horizontal layout */
+  justify-content: center;      /* center the navbar */
+  background: #357ABD;
+}
+
+/* Navbar items */
+nav li {
+  position: relative;           /* needed for dropdown positioning */
+}
+
+/* Navbar links */
+nav a {
+  display: block;
+  padding: 0.8rem 1.5rem;      /* more space for a clean look */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #285a8e;          /* hover effect */
+  border-radius: 5px;           /* rounded corners on hover */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;                 /* hide dropdowns by default */
+  position: absolute;
+  top: 100%;                     /* place below parent */
+  left: 0;
+  background: white;
+  min-width: 180px;              /* slightly wider */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* soft shadow */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+  padding: 0.8rem 1rem;
+  color: #333;
+}
+
+.dropdown-menu li a:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #e6f0fa;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #4a90e2;
+  color: white;
+}
+
+.hero button:hover {
+  background: #357ABD;
+}
+
+/* Featured Sections */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.feature {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  margin-top: 2rem;
 }
