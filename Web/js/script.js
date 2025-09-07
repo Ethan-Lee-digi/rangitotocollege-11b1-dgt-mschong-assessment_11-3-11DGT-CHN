@@ -9,3 +9,7 @@ function changeGreeting() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   document.getElementById('greeting').textContent = randomQuote;
 }
+
+function goBack() {
+  window.history.back();
+}
