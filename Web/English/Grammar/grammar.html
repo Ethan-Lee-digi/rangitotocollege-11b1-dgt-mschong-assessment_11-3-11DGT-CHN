@@ -53,20 +53,23 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Welcome to the Study Hub!</h2>
-    <p id="greeting">Let's get learning today!</p>
-    <button onclick="changeGreeting()">Click for a motivational quote</button>
-  </section>
+<!-- Back Button -->
+<div class="back-container">
+  <button onclick="history.back()" class="back-button">⬅ Back</button>
+</div>
 
   <!-- Featured Sections -->
   <main>
-    <section class="feature">
-      <h2>Notes</h2>
-      <p>Access all your study notes, summaries, and key points for every subject.</p>
-    </section>
+<section class="feature">
+  <h2>Select Your Year Level</h2>
+  <div class="year-grid">
+    <a href="chemistry_yr9.html" class="year-card">Year 9</a>
+    <a href="chemistry_yr10.html" class="year-card">Year 10</a>
+    <a href="chemistry_yr11.html" class="year-card">Year 11</a>
+    <a href="chemistry_yr12.html" class="year-card">Year 12</a>
+    <a href="chemistry_yr13.html" class="year-card">Year 13</a>
+  </div>
+</section>
 
     <section class="feature">
       <h2>Practice Questions</h2>
@@ -85,5 +88,6 @@
   </footer>
 
   <script src="js/script.js"></script>
+  
 </body>
 </html>
